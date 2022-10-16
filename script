@@ -2,6 +2,10 @@
 --MADE BY VIPER
 --DISCORD - https://discord.gg/ZjnMetfUDN
 
+--VIPER SCRIPT HUB
+--MADE BY VIPER
+--DISCORD - https://discord.gg/ZjnMetfUDN
+
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Duration = "2",
     Title = "Loading Script Hub", -- Required
@@ -35,6 +39,25 @@ loadstring(game:HttpGet"https://raw.githubusercontent.com/SleeksScripts/Stone-Mi
         })
     end
 end)
+
+local FirstButton = FirstPage.AddButton("Merge Simulator Script", function()
+    if game.PlaceId == 10925589760 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SleeksScripts/Merge-Simulator-Script/main/Script"))()
+    else
+        game:GetService("StarterGui"):SetCore("SendNotification",{
+            Duration = "2",
+            Title = "Wrong Game", -- Required
+            Text = "This script is for Merge Simulator!", -- Required
+            
+            
+        })
+    end
+end)
+
+
+
+
+
 
 local FirstButton = FirstPage.AddButton("Mining Clicking Simulator Script", function()
     if game.PlaceId == 8884334497 then
